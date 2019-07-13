@@ -29,6 +29,11 @@ body {
 	box-sizing: border-box;
 }
 
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
 .header {
 	background-color: #0a0e34;
 	height: 100vh;
@@ -79,6 +84,11 @@ body {
 	align-items: center;
 	text-transform: uppercase;
 	letter-spacing: 0.4px;
+	transition: 0.4s;
+}
+
+.download-button:hover {
+	background-color: #5e3aaa;
 }
 
 .bold {
@@ -294,7 +304,7 @@ body {
 
 	.logo {
 		width: 205px;
-		margin-bottom: 181px;
+		margin-bottom: 19vh;
 	}
 
 	.header__text {
@@ -303,7 +313,7 @@ body {
 
 	.header__text :first-child{
 		margin-left: 11.7%;
-		margin-bottom: 29px;
+		margin-bottom: 3vh;
 		letter-spacing: 3.52px;
 	}
 
@@ -327,7 +337,7 @@ body {
 		width: 100%;
 	}
 
-	.header__buttons .download-button:first-child {
+	.header__buttons>:first-child {
 		margin-right: 30px;
 	}
 
@@ -381,7 +391,7 @@ body {
 	.players__img {
 		top: 39px;
 		left: calc(100vw - 436px);
-		min-width: 690px;
+		max-width: 690px;
 	}
 
 	.athlets__item {
@@ -422,7 +432,11 @@ body {
 
 
 
-
+@media (min-width: 641px) and (max-width: 730px) {
+	.players__img {
+		left: 296px;
+	}
+}
 
 
 
@@ -468,7 +482,7 @@ body {
 		width: 100%;
 	}
 
-	.header__buttons .download-button:first-child {
+	.header__buttons>:first-of-type {
 		margin-right: 50px;
 	}
 
@@ -534,10 +548,14 @@ body {
 	}
 
 	.players__item {
-		padding: 60px 51% 55px 10%;
+		padding: 60px 50% 55px 10%;
 		font-size: 1.25rem;
 		line-height: 28px;
 		letter-spacing: 1px;
+	}
+
+	.players__item2 {
+		padding-bottom: 83px;
 	}
 
 	.item__header {
