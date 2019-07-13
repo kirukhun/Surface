@@ -85,6 +85,52 @@ body {
 	font-weight: bold;
 }
 
+.section-header {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #e7e7e7;
+}
+
+.athlets {
+	position: relative;
+}
+
+.athlets__img {
+	position: absolute;
+}
+
+.item__header {
+	color: #c1c1c1;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.item__number {
+	color: #000000;
+	display: block;
+}
+
+.item__number::after {
+	content:"";
+	background-color: #fff;
+	display: block;
+}
+
+.athlets__item2 {
+		background-color: #f5f4f9;
+	}
+
+.athlets__item3 {
+	background-color: #5e42b0;
+	color: #fff;
+	}
+
 @media (max-width: 640px) {
 	.header {
 		background-image: url(../img/football_767.jpg);
@@ -132,6 +178,52 @@ body {
 		width: 20px;
 		margin-right: 8px;
 		margin-left: 29%;
+	}
+
+	.section-header {
+		font-size: 50px;
+		padding-top: 25px;
+		padding-left: 21px;
+		height: 305px;
+		margin: 0;
+		line-height: 60px;
+	}
+
+	.athlets__img {
+		top: 80px;
+		left: calc(50% - 96px);
+		max-width: 192px;
+	}
+
+	.athlets__item {
+		padding: 83px 21px 51px;
+		font-size: 94%;
+		line-height: 18px;
+		letter-spacing: 0.75px;
+	}
+
+	.item__header {
+		margin-bottom: 27px;
+		line-height: 15px;
+		font-size: 23px;
+
+	}
+
+	.athlets__item1 {
+		background-color: #fafafa;
+	}
+
+	.item__number {
+		font-size: 14px;
+		margin-right: 10px;
+		line-height: 11px;
+	}
+
+	.item__number::after {
+		width: 15px;
+		height: 4px;
+		border-radius: 2px;
+		margin-top: 3px;
 	}
 }
 
@@ -214,6 +306,47 @@ body {
 		margin-right: 28px;
 		margin-left: 57px;
 	}
+
+	.section-header {
+		font-size: 80px;
+		padding-top: 85px;
+		padding-left: 38%;
+		margin: 0 0 59px 0;
+		line-height: 19px;
+		height: 61px;
+	}
+
+	.athlets__img {
+		top: 94px;
+		right: 56%;
+		max-width: 497px;
+	}
+
+	.athlets__item {
+		padding: 42px 48px 36px 38%;
+		font-size: 100%;
+		line-height: 28px;
+		letter-spacing: 0.8px;
+	}
+
+	.item__header {
+		margin-bottom: 32px;
+		line-height: 15px;
+		font-size: 32px;
+	}
+
+	.item__number {
+		font-size: 18px;
+		margin-right: 14px;
+		line-height: 9px;
+	}
+
+	.item__number::after {
+		width: 19px;
+		height: 5px;
+		border-radius: 2px;
+		margin-top: 6px;
+	}
 }
 
 @media (min-width: 961px) {
@@ -278,5 +411,45 @@ body {
 		width: 40px;
 		margin-right: 29px;
 		margin-left: 57px;
+	}
+
+	.section-header {
+		font-size: 80px;
+		padding-top: 115px;
+		padding-left: 52%;
+		margin: 0 0 49px 0;
+		line-height: 60px;
+	}
+
+	.athlets__img {
+		top: 27px;
+		right: 50%;
+		max-width: 566px;
+	}
+
+	.athlets__item {
+		padding: 60px 10% 55px 52%;
+		font-size: 1.25rem;
+		line-height: 28px;
+		letter-spacing: 1px;
+	}
+
+	.item__header {
+		margin-bottom: 32px;
+		line-height: 15px;
+		font-size: 32px;
+	}
+
+	.item__number {
+		font-size: 18px;
+		margin-right: 14px;
+		line-height: 9px;
+	}
+
+	.item__number::after {
+		width: 21px;
+		height: 5px;
+		border-radius: 2px;
+		margin-top: 6px;
 	}
 }
