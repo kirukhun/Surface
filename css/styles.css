@@ -1,186 +1,282 @@
 @font-face {
-  font-family: 'OpenSans';
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'OpenSans';
+	font-weight: normal;
+	font-style: normal;
 
-  src: url(../sources/fonts/OpenSans-Regular.ttf);
+	src: url(../fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  font-style: normal;
+	font-family: 'OpenSans';
+	font-style: normal;
 
-  src: url(../sources/fonts/OpenSans-Bold.ttf);
-  font-wight: bold;
-}
-
-
-.ta-right {
-  text-align: right;
+	src: url(../fonts/OpenSans-Bold.ttf);
+	font-weight: 700;
 }
 
 html {
-  font-family: 'Open Sans';
-  font-size: 100%;
-
-  margin: 0;
+	font-family: "Open Sans";
+	font-size: 100%;
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
-*, :after, :before {
-  box-sizing: border-box;
+*, :before, :after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
-
-
 
 .header {
-  position: relative;
-
-  height: 100vh;
-  padding-top: 33px;
-
-  color: #fff;
-  background-color: #090c35;
-  background-position: center center;
-  -webkit-background-size: cover;
-          background-size: cover;
-  display: flex;      
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  flex-direction: column;
+	background-color: #0a0e34;
+	height: 100vh;
+	color: #fff;
+	position: relative;
+	background-position: top center;
 }
 
 .header::before {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+	content: "";
+	background-color: #0a0e34;
+	position: absolute;
 
-  content: '';
-
-  opacity: 0.92;
-  background-color: #090c35;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	opacity: 0.93;
 }
 
-
 .logo {
-  position: relative;
-  z-index: 1;
-
-  margin: 0 auto 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	position: relative;
 }
 
 .header__text {
-  font-family: 'Open Sans';
-  font-size: 1.75rem;
-  line-height: 31.32px;
-
-  position: relative;
-  z-index: 1;
-
-  margin-top: 136px;
-
-  letter-spacing: 1.54px;
-  text-transform: uppercase;
-
+	z-index: 1;
+	position: relative;
+	text-transform: uppercase;
+	margin: 0;
 }
 
-.header__text :first-child {
-  margin-bottom: 30px;
+.header__buttons {
+	position: absolute;
 }
-
 
 .download-button {
-  position: relative;
-  z-index: 1;
-
-  display: flex;
-
-  margin-right: auto;
-  margin-left: auto;
-
-  border-radius: 17px;
-  background-color: #5e42b0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background-color: #5e42b0;
+	-ms-align-items: center;
+	align-items: center;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
 }
 
-.button__text {
-  font-family: Open Sans;
-
-  text-transform: uppercase;
-}
-
-.store-name {
-  font-weight: bold;
+.bold {
+	font-weight: bold;
 }
 
 @media (max-width: 640px) {
-  .header {
-    background-image: url(../sources/img/football_767.jpg);
-  }
+	.header {
+		background-image: url(../img/football_767.jpg);
+		padding-top: 6%;
+	}
 
-  .logo {
-    width: 133px;
-  }
+	.logo {
+		width: 133px;
+		margin-bottom: 24vh;
+	}
 
-  .header__text {
-    margin-right: 42px;
-    margin-left: 20px;
-  }
+	.header__text {
+		font-size: 1.75rem;
+	}
 
-  .header__text__second {
-  	margin-left: auto;
-  	width: 218px;
-  	letter-spacing: 1.4px;
-  }
+	.header__text :first-child{
+		margin-left: 6.25%;
+		margin-bottom: 5vh;
+		letter-spacing: 1.54px;
+	}
 
-  .header__buttons {
-  	margin-top: auto;
-  	margin-bottom: 92px;
-  }
+	.header__text :last-child {
+		margin-left: 20%;
+		margin-right: 6.25%;
+		letter-spacing: 1.4px;
+	}
 
-  .download-button {
-    font-size: .5rem;
+	.header__buttons {
+		bottom: 14.7vh;
+		right: 6.25%;
+		left: 6.25%;
+	}
 
-    width: 100%;
-    max-width: 280px;
-    height: 35px;
-    margin-bottom: 14px;
-  }
+	.header__buttons .download-button:first-child {
+		margin-bottom: 14px;
+	}
 
-  .button__logo {
-    width: 20px;
-  }
+	.download-button {
+		height: 35px;
+		border-radius: 17px;
+		font-size: 0.5rem;
+	}
+
+	.button__logo {
+		width: 20px;
+		margin-right: 8px;
+		margin-left: 29%;
+	}
+}
+
+
+@media (max-height: 480px) {
+	.logo {
+		margin-bottom: 33px;
+	}
+
+	.header__text {
+		margin-bottom: 112px;
+	}
+
+	.header__buttons {
+		bottom: 14px;
+	}
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
-  .logo {
-    width: 205px;
-  }
+	.header {
+		background-image: url(../img/football_1280.jpg);
+		padding-top: 45px;
+	}
 
-  .header__text {
-    margin-right: 42px;
-    margin-left: 20px;
-  }
+	.logo {
+		width: 205px;
+		margin-bottom: 181px;
+	}
+
+	.header__text {
+		font-size: 4rem;
+	}
+
+	.header__text :first-child{
+		margin-left: 11.7%;
+		margin-bottom: 29px;
+		letter-spacing: 3.52px;
+	}
+
+	.header__text :last-child {
+		margin-left: 25.3%;
+		margin-right: 70px;
+		letter-spacing: 3.2px;
+	}
+
+
+	.header__buttons {
+		bottom: 9.4vh;
+
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+
+		justify-content: center;
+		width: 100%;
+	}
+
+	.header__buttons .download-button:first-child {
+		margin-right: 30px;
+	}
+
+	.download-button {
+		height: 77px;
+		width: 311px;
+		border-radius: 156px;
+		font-size: 0.875rem;
+		box-shadow: 8px 14px 24px #0a0e34;
+	}
+
+	.apple-logo {
+		width: 36px;
+		margin-right: 28px;
+		margin-left: 41px;
+	}
+
+	.gp-logo {
+		width: 41px;
+		margin-right: 28px;
+		margin-left: 57px;
+	}
 }
 
-@media (min-width: 961px) and (max-width: 1920px) {
-  .logo {
-    width: 191px;
-  }
+@media (min-width: 961px) {
+	.header {
+		background-image: url(../img/football_1920.jpg);
+		padding-top: 40px;
+	}
 
-  .header__text {
-    margin-right: 42px;
-    margin-left: 20px;
-  }
+	.logo {
+		width: 191px;
+		margin-bottom: 27vh;
+	}
+
+	.header__text {
+		font-size: 8.3vh;
+	}
+
+	.header__text :first-child{
+		margin-left: 10%;
+		margin-bottom: 25px;
+		letter-spacing: 4.96px;
+	}
+
+	.header__text :last-child {
+		margin-right: 10%;
+		letter-spacing: 4.5px;
+		text-align: right;
+	}
+
+	.header__buttons {
+		bottom: 5.7vh;
+
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+
+		justify-content: center;
+		width: 100%;
+	}
+
+	.header__buttons .download-button:first-child {
+		margin-right: 50px;
+	}
+
+	.download-button {
+		height: 77px;
+		width: 311px;
+		border-radius: 156px;
+		font-size: 0.875rem;
+		box-shadow: 8px 14px 24px #0a0e34;
+	}
+
+	.apple-logo {
+		width: 42px;
+		margin-right: 24px;
+		margin-left: 38px;
+	}
+
+	.gp-logo {
+		width: 40px;
+		margin-right: 29px;
+		margin-left: 57px;
+	}
 }
