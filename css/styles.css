@@ -14,6 +14,7 @@
 	font-weight: 700;
 }
 
+
 html {
 	font-family: "Open Sans";
 	font-size: 100%;
@@ -27,11 +28,16 @@ body {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	margin: 0;
 }
 
 a {
 	color: inherit;
 	text-decoration: inherit;
+}
+
+h1 {
+	font-size: inherit;
 }
 
 picture {
@@ -44,7 +50,7 @@ picture {
 
 .header {
 	background-color: #0a0e34;
-	height: 100vh;
+	min-height: 100vh;
 	color: #fff;
 	position: relative;
 	background-position: top center;
@@ -75,10 +81,12 @@ picture {
 	position: relative;
 	text-transform: uppercase;
 	margin: 0;
+	font-weight: bold;
 }
 
 .header__buttons {
-	position: absolute;
+	position: relative;
+	z-index: 1;
 }
 
 .download-button {
@@ -232,6 +240,7 @@ picture {
 	.header {
 		background-image: url(../img/football_767.jpg);
 		padding-top: 6%;
+		padding-bottom: 14px;
 	}
 
 	.logo {
@@ -256,9 +265,11 @@ picture {
 	}
 
 	.header__buttons {
-		bottom: 14.7vh;
-		right: 6.25%;
-		left: 6.25%;
+		margin-top: 15.6px;
+		margin-right: 6.25%;
+		margin-left: 6.25%;
+
+		margin: 89px 6.25% 0 6.25%;
 	}
 
 	.header__buttons .download-button:first-child {
@@ -281,6 +292,7 @@ picture {
 		font-size: 50px;
 		padding-top: 25px;
 		padding-left: 21px;
+		padding-right: 21px;
 		height: 305px;
 		margin: 0;
 		line-height: 60px;
@@ -410,10 +422,6 @@ picture {
 	.header__text {
 		margin-bottom: 112px;
 	}
-
-	.header__buttons {
-		bottom: 14px;
-	}
 }
 
 
@@ -429,6 +437,7 @@ picture {
 	.header {
 		background-image: url(../img/football_1280.jpg);
 		padding-top: 45px;
+		padding-bottom: 30px;
 	}
 
 	.logo {
@@ -454,7 +463,7 @@ picture {
 
 
 	.header__buttons {
-		bottom: 9.4vh;
+		margin-top: 32.5%;
 
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -490,13 +499,16 @@ picture {
 		margin-left: 57px;
 	}
 
+	.athlets {
+		padding-top: 85px;
+	}
+
 	.athlets__header {
 		font-size: 80px;
-		padding-top: 85px;
 		padding-left: 38%;
-		margin: 0 0 59px 0;
-		line-height: 19px;
-		height: 61px;
+		padding-right: 48px;
+		margin: 0 0 18px 0;
+		line-height: 60px;
 	}
 
 	.players {
@@ -506,9 +518,9 @@ picture {
 	.players__header {
 		font-size: 80px;
 		padding-left: 34px;
+		padding-right: 49%;
 		margin: 0 0 18px 0;
 		line-height: 60px;
-		height: 61px;
 	}
 
 	.athlets__img {
@@ -644,6 +656,7 @@ picture {
 	.header {
 		background-image: url(../img/football_1920.jpg);
 		padding-top: 40px;
+		padding-bottom: 50px;
 	}
 
 	.logo {
@@ -652,7 +665,7 @@ picture {
 	}
 
 	.header__text {
-		font-size: 8.3vh;
+		font-size: 90px;
 	}
 
 	.header__text :first-child{
@@ -665,10 +678,11 @@ picture {
 		margin-right: 10%;
 		letter-spacing: 4.5px;
 		text-align: right;
+		font-size: 90px;
 	}
 
 	.header__buttons {
-		bottom: 5.7vh;
+		margin-top: 20.5vh;
 
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -812,20 +826,24 @@ picture {
 
 	.be-active__content {
 		padding-left: 126px;
-		padding-right: 216px;
+		padding-right: 10%;
+		padding-bottom: 30px;
 	}
 
 	.find-contact__content {
-		padding-left: 126px;
-		padding-right: 216px;
+		padding-left: 10%;
+		padding-right: 129px;
+		padding-bottom: 30px;
 	}
 
 	.be-active__text-wrapper {
 		overflow: auto;
+		min-width: 275px;
 	}
 
 	.find-contact__text-wrapper {
 		overflow: auto;
+		min-width: 380px;
 	}
 	
 	.be-active .number-wrapper {
@@ -894,6 +912,18 @@ picture {
 		margin: 0;
 		font-size: 24px;
 		letter-spacing: 1.2px;
+	}
+
+}
+
+@media (min-width: 941px) and (max-width: 1180px){
+	.find-contact__content {
+		padding-left: 10px;
+	}
+
+	.find-contact__text-wrapper {
+		width: 380px;
+		margin-left: auto;
 	}
 
 }
