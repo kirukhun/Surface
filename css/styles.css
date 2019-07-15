@@ -14,7 +14,6 @@
 	font-weight: 700;
 }
 
-
 html {
 	font-family: "Open Sans";
 	font-size: 100%;
@@ -175,11 +174,11 @@ picture {
 	color: #8765dd;
 }
 
-.be-active__content {
+.odd-block__content {
 	position: relative;
 }
 
-.find-contact__content {
+.even-block__content {
 	position: relative;
 }
 
@@ -214,13 +213,13 @@ picture {
 	display: block;
 }
 
-.be-active__header {
+.odd-block__header {
 	color: #e7e7e7;
 	text-transform: uppercase;
 	font-weight: 700;
 }
 
-.find-contact__header {
+.even-block__header {
 	color: #e7e7e7;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -341,22 +340,22 @@ picture {
 		margin-top: 3px;
 	}
 
-	.be-active__img {
+	.odd-block__img {
 		max-width: 100%;
 		overflow: hidden;
 	}
 
-	.find-contact__img {
+	.even-block__img {
 		max-width: 100%;
 		overflow: hidden;
 	}
 
-	.be-active__content {
+	.odd-block__content {
 		padding-top: 33px;
 		padding-bottom: 77px;
 	}
 
-	.find-contact__content {
+	.even-block__content {
 		padding-top: 33px;
 		padding-bottom: 77px;
 	}
@@ -383,24 +382,24 @@ picture {
 		margin-top: 5px;
 	}
 
-	.be-active__header {
+	.odd-block__header {
 		font-size: 28px;
 		margin: 0 0 23px 20px;
 	}
 
-	.find-contact__header {
+	.even-block__header {
 		font-size: 28px;
 		margin: 0 0 23px 20px;
 	}
 
-	.be-active__text {
+	.odd-block__text {
 		margin-left: 20px;
 		margin-right: 20px;
 		font-size: 100%;
 		letter-spacing: 0.8px;
 	}
 
-	.find-contact__text {
+	.even-block__text {
 		margin-left: 20px;
 		margin-right: 20px;
 		font-size: 100%;
@@ -423,6 +422,7 @@ picture {
 		margin-bottom: 112px;
 	}
 }
+
 
 
 
@@ -570,22 +570,22 @@ picture {
 		margin-top: 6px;
 	}
 
-	.be-active__img {
+	.odd-block__img {
 		max-width: 100%;
 		overflow: hidden;
 	}
 
-	.find-contact__img {
+	.even-block__img {
 		max-width: 100%;
 		overflow: hidden;
 	}
 
-	.be-active__content {
+	.odd-block__content {
 		padding-top: 90px;
 		padding-bottom: 97px;
 	}
 
-	.find-contact__content {
+	.even-block__content {
 		padding-top: 90px;
 		padding-bottom: 97px;
 	}
@@ -612,23 +612,23 @@ picture {
 		margin-top: 9px;
 	}
 
-	.be-active__header {
+	.odd-block__header {
 		font-size: 80px;
 		margin: 0 0 37px 33px;
 	}
 
-	.find-contact__header {
+	.even-block__header {
 		font-size: 80px;
 		margin: 0 0 37px 33px;
 	}
 
-	.be-active__text {
+	.odd-block__text {
 		margin-left: 33px;
 		font-size: 24px;
 		letter-spacing: 1.2px;
 	}
 
-	.find-contact__text {
+	.even-block__text {
 		margin-left: 33px;
 		font-size: 24px;
 		letter-spacing: 1.2px;
@@ -789,7 +789,7 @@ picture {
 		margin-top: 6px;
 	}
 
-	.be-active {
+	.odd-block {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -797,7 +797,7 @@ picture {
 		display: flex;
 	}
 
-	.find-contact {
+	.even-block {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -805,48 +805,48 @@ picture {
 		display: flex;
 	}
 
-	.be-active__img {
+	.odd-block__img {
 		width: 100%;
 		overflow: hidden;
 	}
 
-	.find-contact__img {
+	.even-block__img {
 		width: 100%;
 		overflow: hidden;
 	}
 
-	.be-active__picture {
+	.odd-block__picture {
 		width: 50%;
 	}
 
-	.find-contact__picture {
+	.even-block__picture {
 		width: 50%;
 		order: 1;
 	}
 
-	.be-active__content {
+	.odd-block__content {
 		padding-left: 126px;
 		padding-right: 10%;
 		padding-bottom: 30px;
 	}
 
-	.find-contact__content {
+	.even-block__content {
 		padding-left: 10%;
 		padding-right: 129px;
 		padding-bottom: 30px;
 	}
 
-	.be-active__text-wrapper {
+	.odd-block__text-wrapper {
 		overflow: auto;
 		min-width: 275px;
 	}
 
-	.find-contact__text-wrapper {
+	.even-block__text-wrapper {
 		overflow: auto;
 		min-width: 380px;
 	}
 	
-	.be-active .number-wrapper {
+	.odd-block .number-wrapper {
 		width: 168px;
 		height: 155px;
 
@@ -856,7 +856,7 @@ picture {
 
 
 
-	.find-contact .number-wrapper {
+	.even-block .number-wrapper {
 		width: 168px;
 		height: 155px;
 
@@ -878,37 +878,37 @@ picture {
 		margin-top: 9px;
 	}
 
-	.be-active__content {
+	.odd-block__content {
 		width: 50%;
 		height: 100%;
 	}
 
-	.find-contact__content {
+	.even-block__content {
 		width: 50%;
 		height: 100%;
 	}
 	
-	.be-active__header {
+	.odd-block__header {
 		margin-top: 35.6%;
 		margin-bottom: 16%;
 		font-size: 80px;
 		line-height: 80px;
 	}
 
-	.find-contact__header {
+	.even-block__header {
 		margin-top: 35.6%;
 		margin-bottom: 16%;
 		font-size: 80px;
 		line-height: 80px;
 	}
 
-	.be-active__text {
+	.odd-block__text {
 		margin: 0;
 		font-size: 24px;
 		letter-spacing: 1.2px;
 	}
 
-	.find-contact__text {
+	.even-block__text {
 		margin: 0;
 		font-size: 24px;
 		letter-spacing: 1.2px;
@@ -917,13 +917,15 @@ picture {
 }
 
 @media (min-width: 941px) and (max-width: 1180px){
-	.find-contact__content {
+	.even-block__content {
 		padding-left: 10px;
 	}
 
-	.find-contact__text-wrapper {
+	.even-block__text-wrapper {
 		width: 380px;
 		margin-left: auto;
 	}
 
 }
+
+
