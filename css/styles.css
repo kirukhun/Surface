@@ -47,15 +47,32 @@ picture {
 	display: flex;
 }
 
-.header {
+.header, .footer {
 	background-color: #0a0e34;
 	min-height: 100vh;
 	color: #fff;
 	position: relative;
 	background-position: top center;
+	-webkit-box-sizing: cover;
+	-moz-box-sizing: cover;
+	box-sizing: cover;
 }
 
-.header::before {
+.footer {
+	background-position: center center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.header::before, .footer::before {
 	content: "";
 	background-color: #0a0e34;
 	position: absolute;
@@ -68,6 +85,7 @@ picture {
 	opacity: 0.93;
 }
 
+
 .logo {
 	margin-left: auto;
 	margin-right: auto;
@@ -75,7 +93,7 @@ picture {
 	position: relative;
 }
 
-.header__text {
+.header__text, .footer__text {
 	z-index: 1;
 	position: relative;
 	text-transform: uppercase;
@@ -83,7 +101,7 @@ picture {
 	font-weight: bold;
 }
 
-.header__buttons {
+.header__buttons, .footer__buttons {
 	position: relative;
 	z-index: 1;
 }
@@ -225,6 +243,30 @@ picture {
 	font-weight: 700;
 }
 
+.app-logo {
+	z-index: 1;
+	background-image: linear-gradient(#7651d9, #50339c);
+	position: relative;
+}
+
+.footer__text-wrapper {
+	text-transform: uppercase;
+}
+
+.footer__header {
+	z-index: 1;
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+}
+
+.footer__text {
+	color: #9b8ec1;
+}
+
+.footer .logo {
+	margin: auto auto 0 auto;
+}
 
 
 
@@ -263,15 +305,19 @@ picture {
 		letter-spacing: 1.4px;
 	}
 
-	.header__buttons {
-		margin-top: 15.6px;
-		margin-right: 6.25%;
-		margin-left: 6.25%;
+	.header__buttons, .footer__buttons {
+		margin: 89px 6.25% 14px 6.25%;
+	}
 
-		margin: 89px 6.25% 0 6.25%;
+	.header__buttons, .footer__buttons {
+		margin: 76px 6.25% 0 6.25%;
 	}
 
 	.header__buttons .download-button:first-child {
+		margin-bottom: 14px;
+	}
+
+	.footer__buttons .download-button:first-child {
 		margin-bottom: 14px;
 	}
 
@@ -405,6 +451,38 @@ picture {
 		font-size: 100%;
 		letter-spacing: 0.8px;
 	}
+
+	.footer {
+		padding-top: 100px;
+		padding-bottom: 10px;
+		background-image: url(../img/game_767.jpg);
+	}
+
+	.app-logo {
+		width: 72px;	
+		height: 74px;
+		margin-left: auto;	
+		margin-right: auto;	
+		border-radius: 15px;
+		padding: 11px 7px;
+		margin-bottom: 10%;
+	}
+
+	.footer__text-wrapper {
+		padding-right: 3.5%;
+		padding-left: 3.5%;
+	}
+
+	.footer__header {
+		font-size: 32px;
+		letter-spacing: 1.6px;
+		text-align: center;
+	}
+
+	.footer__text {
+		text-align: center;
+		font-size: 14px;
+	}
 }
 
 
@@ -475,7 +553,24 @@ picture {
 		width: 100%;
 	}
 
+	.footer__buttons {
+		margin-top: 30%;
+		margin-bottom: 30px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+
+		justify-content: center;
+		width: 100%;
+	}
+
 	.header__buttons>:first-child {
+		margin-right: 30px;
+	}
+
+	.footer__buttons>:first-child {
 		margin-right: 30px;
 	}
 
@@ -634,6 +729,44 @@ picture {
 		letter-spacing: 1.2px;
 	}
 
+	
+
+	.footer {
+		padding-top: 126px;
+		padding-bottom: 24px;
+		background-image: url(../img/game_1280.jpg);
+	}
+
+	.app-logo {
+		width: 130px;	
+		height: 137px;
+		margin-left: auto;	
+		margin-right: auto;	
+		border-radius: 33px;
+		padding: 24px 13px;
+		margin-bottom: 59px;
+	}
+
+	
+
+
+	.footer__text-wrapper {
+		padding-right: 2.5%;
+		padding-left: 2.5%;
+	}
+
+	.footer__header {
+		font-size: 80px;
+		letter-spacing: 4.85px;
+		text-align: center;
+	}
+
+	.footer__text {
+		text-align: center;
+		font-size: 36px;
+	}
+
+
 }
 
 
@@ -694,7 +827,25 @@ picture {
 		width: 100%;
 	}
 
+	.footer__buttons {
+		margin-top: 15vh;
+		margin-bottom: 50px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+
+		justify-content: center;
+		width: 100%;
+	}
+
+
 	.header__buttons>:first-of-type {
+		margin-right: 50px;
+	}
+
+	.footer__buttons>:first-of-type {
 		margin-right: 50px;
 	}
 
@@ -913,6 +1064,54 @@ picture {
 		font-size: 24px;
 		letter-spacing: 1.2px;
 	}
+
+	.footer {
+		padding-top: 229px;
+		padding-bottom: 52px;
+		background-image: url(../img/game_1920.jpg);
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer__content {	
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+	}
+
+	.app-logo {
+		width: 130px;	
+		height: 137px;
+		
+		border-radius: 33px;
+		padding: 24px 13px;
+		margin-right: 37px;
+	}
+
+	.footer__text-wrapper {
+	}
+
+	.footer__header {
+		font-size: 80px;
+		letter-spacing: 4.85px;
+		line-height: 80px;
+		margin-bottom: 20px;
+	}
+
+	.footer__text {
+		font-size: 36px;
+		line-height: 36px;
+	}
+
 
 }
 
