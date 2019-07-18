@@ -5,7 +5,6 @@
 	url("../fonts/OpenSans-Regular.ttf") format("truetype"); 
 	font-weight: normal;
 	font-style: normal;
-
 }
 
 @font-face {
@@ -49,6 +48,8 @@ picture {
 	display:     -ms-flex;
 	display:      -o-flex;
 	display:         flex;
+	max-width: 100%;
+	height: auto;
 }
 
 .header, .footer {
@@ -418,6 +419,11 @@ picture {
 		margin-bottom: 27px;
 	}
 
+
+	.even-block__img, .odd-block__img {
+		object-fit: cover;
+	}
+
 	.athlets__item1, .players__item1 {
 		background-color: #fafafa;
 	}
@@ -441,12 +447,14 @@ picture {
 		overflow: hidden;
 
 		max-width: 100%;
+		height: auto;
 	}
 
 	.even-block__img {
 		overflow: hidden;
 
 		max-width: 100%;
+		height: auto;
 	}
 
 	.odd-block__content {
@@ -757,6 +765,11 @@ picture {
 		overflow: hidden;
 
 		max-width: 100%;
+	}
+
+	
+	.even-block__img, .odd-block__img {
+		object-fit: cover;
 	}
 
 	.odd-block__content {
@@ -1173,6 +1186,10 @@ picture {
 		margin-bottom: 16%;
 	}
 
+	.even-block__img, .odd-block__img {
+		object-fit: cover;
+	}
+
 	.odd-block__text {
 		font-size: 24px;
 
@@ -1245,7 +1262,7 @@ picture {
 	}
 }
 
-@media (min-width: 941px) and (max-width: 1180px) {
+@media (min-width: 961px) and (max-width: 1180px) {
 	.even-block__content {
 		padding-left: 10px;
 	}
