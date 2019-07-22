@@ -42,15 +42,7 @@ h1 {
 	font-size: inherit;
 }
 
-picture {
-	display: -webkit-flex;
-	display:    -moz-flex;
-	display:     -ms-flex;
-	display:      -o-flex;
-	display:         flex;
-	max-width: 100%;
-	height: auto;
-}
+
 
 .header, .footer {
 	position: relative;
@@ -419,11 +411,6 @@ picture {
 		margin-bottom: 27px;
 	}
 
-
-	.even-block__img, .odd-block__img {
-		object-fit: cover;
-	}
-
 	.athlets__item1, .players__item1 {
 		background-color: #fafafa;
 	}
@@ -765,11 +752,6 @@ picture {
 		overflow: hidden;
 
 		max-width: 100%;
-	}
-
-	
-	.even-block__img, .odd-block__img {
-		object-fit: cover;
 	}
 
 	.odd-block__content {
@@ -1184,6 +1166,16 @@ picture {
 
 		margin-top: 35.6%;
 		margin-bottom: 16%;
+	}
+
+	picture {
+		display: -webkit-flex;
+		display:    -moz-flex;
+		display:     -ms-flex;
+		display:      -o-flex;
+		display:         flex;
+		max-width: 100%;
+		height: auto;
 	}
 
 	.even-block__img, .odd-block__img {
